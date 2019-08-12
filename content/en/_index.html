@@ -1,18 +1,17 @@
 +++
-title = "Goldydocs"
-linkTitle = "Goldydocs"
+title = "Perspective Comment Analyzer API"
+linkTitle = "Perspective API"
 
 +++
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" color="orange" >}}
+{{< blocks/cover title="Perspective Comment Analyzer API" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
+	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/conversationai/perspectiveapi">
 		Download <i class="fab fa-github ml-2 "></i>
 	</a>
-	<p class="lead mt-5">Porridge temperature assessment - in the cloud!</p>
 	<div class="mx-auto mt-5">
 		{{< blocks/link-down color="info" >}}
 	</div>
@@ -21,63 +20,53 @@ linkTitle = "Goldydocs"
 
 
 {{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
+<p>The Perspective API is part of the <a href="https://conversationai.github.io">Conversation AI</a> research effort that
+aims to help increase empathy, participation, and quality in online conversation at scale.</p>
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](http://docsy.dev))
+<p>This website repository contains a quickstart guide and the API reference documentation for the Perspective Comment Analyzer API.</p>
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-lightbulb" title="Project vision" url="https://jigsaw.google.com/vision/" %}}
+Read about the vision that inspired Jigsaw.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/gohugoio/hugo/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/conversationai/perspectiveapi" %}}
+We do a [Pull Request](https://github.com/conversationai/perspectiveapi/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
+{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/jigsaw" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
 
-
 {{< /blocks/section >}}
 
 
 {{< blocks/section >}}
-<div class="col">
-<h1 class="text-center">This is the second Section</h1>
-</div>
 
-{{< /blocks/section >}}
+<p>Example demo code:</p>
 
+<ul>
 
+ <li><a href="https://github.com/conversationai/perspectiveapi-simple-server">A simple server</a> that can hold your API key and access the Perspective API.</li>
+ <li>An <a href="https://github.com/conversationai/perspectiveapi-authorship-demo">example of an authorship experience</a> gives an author feedback as they type.</li>
+ <li>A <a href="https://github.com/conversationai/perspectiveapi-proxy">proxy to the API</a> with access restrictions and a simple UI to debug calls to the API.</li>
+ <li><a href="https://github.com/conversationai/conversationai-moderator">Conversation AI - Moderator</a> a comment moderation system that provide hint and assist UI for moderators based on a plugable model of computational assistants, including support for using Perspective API models. There are also plugins to support moderation of different platforms, e.g.:
+	 <ul>
+		 <li><a href="https://github.com/conversationai/conversationai-moderator-discourse">Discourse plugin</a></li>
+		 <li><a href="https://github.com/conversationai/conversationai-moderator-wordpress">WordPress plugin</a></li>
+		 <li><a href="https://github.com/conversationai/conversationai-moderator-reddit">Reddit plugin</a> (incomplete, does not yet support actions)</li>
+ 	</ul>
+  </li>
+</ul>
 
-{{< blocks/section >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
+<p>If you would like to receive email updates about the API - for example when we add new models, or deprecate old ones - you can subscribe to <a href="https://groups.google.com/forum/#!forum/perspective-announce/join">perspective-announce</a>. You will
+then receive email updates from perspective-announce@googlegroups.com. This list will be used only to share release information, and will never be used to ask you login details of any kind. For support and to contact us, see: <a href="https://support.perspectiveapi.com/">https://support.perspectiveapi.com/</a>.</p>
 
+<p>The Perspective API is provided under the <a href="https://www.google.com/intl/en/policies/privacy/">Google Privacy Policy</a>, and the <a href="https://www.google.com/intl/en/policies/terms/">Google Cloud API terms of service</a>.</p>
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/gohugoio/hugo" %}}
-We do a [Pull Request](https://github.com/gohugoio/hugo/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another Section</h1>
-</div>
+<p>Users can leverage the <code>DoNotStore</code> flag to ensure that all submitted comments are automatically deleted after scores are returned and/or the <code>SuggestCommentScore</code> method to submit corrections to improve Perspective over time.</p>
 
 {{< /blocks/section >}}
