@@ -5,7 +5,6 @@ Add styles or override variables from the theme here.
 */
 
 // Theme colors
-
 $primary: #5801d1 !default;
 $primary-light: lighten($primary, 75%) !default;
 $secondary: #f5f5f5 !default;
@@ -64,3 +63,9 @@ $font-weight-bold: 700 !default;
 $font-weight-body-text: $font-weight-normal !default;
 $headings-font-weight: $font-weight-medium !default;
 
+/*******************
+Other customizations
+*****************************/
+.td-box--3 {
+	code {color:#999; background:rgba(255,255,255,0.5); padding:3px 5px;}
+}
