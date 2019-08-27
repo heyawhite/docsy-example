@@ -34,17 +34,17 @@ $code-color: darken($secondary, 20%) !default;
 // UI element colors
 
 $border-color: $gray-300 !default;
-$td-sidebar-bg-color: rgba($primary, 0.03) !default;
-$td-sidebar-border-color: $border-color !default;
+$td-sidebar-bg-color: rgba($primary, 0.1) !default;
+$td-sidebar-border-color: $primary-light !default;
 
 // Background colors for the sections on home page etc. It is a paint by number system, starting at 0, where the number is taken from the shortcode's ordinal
 // if not provided by the user.
 // These colors are all part of the theme palette, but the mix is fairly random to create variation. This can be overridden by the project if needed.
 $td-box-colors: $dark, $primary, $secondary, $info, $primary-light, $gray-600, $success, $warning, $dark, $danger, $primary, $secondary, $primary-light, $info;
 
-$link-color: darken($blue, 15%) !default;
+$link-color: darken($primary, 15%) !default;
 $link-decoration: none !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: darken($primary, 15%) !default;
 $link-hover-decoration: none !default;
 
 // Fonts
@@ -68,4 +68,19 @@ Other customizations
 *****************************/
 .td-box--3 {
 	code {color:#999; background:rgba(255,255,255,0.5); padding:3px 5px;}
+}
+
+.navbar-white.td-navbar {
+	background:#fff;
+	.navbar-nav .nav-link.active {
+		color:rgba(0,0,0,.54) !important;
+	}
+} 
+footer.bg-white {
+	.row {padding:20px 0 10px;}
+	h3 {font-size: 1.125rem; color:$gray-600; text-transform:uppercase;}
+	.footer-li {list-style:none;}
+	.bottom {
+		.logo {height:auto; width:120px;}
+	}
 }

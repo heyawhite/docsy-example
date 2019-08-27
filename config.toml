@@ -64,12 +64,12 @@ weight = 1
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
-
 # Everything below this are Site Params
-
 [params]
 copyright = "Jigsaw"
 privacy_policy = "https://policies.google.com/privacy"
+support = "https://support.perspectiveapi.com/s/contactsupport"
+terms = "https://policies.google.com/terms"	
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
@@ -110,7 +110,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-	name ="Twitter"
+	name = "Twitter"
 	url = "https://twitter.com/jigsaw"
 	icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
@@ -130,3 +130,39 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	url = "https://groups.google.com/forum/#!forum/perspective-announce/join"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
+# 
+# Perspective custom theme links
+# 
+# Links for header navigation, before contact/support
+# [[params.links.nav]]
+# 	name = ""
+# 	url = ""
+# Links for footer navigation
+[[params.links.browse]]
+	name = "About"
+	url = "#"
+[[params.links.browse]]
+	name = "Using Perspective API"
+	url = "/documentation/"
+[[params.links.browse]]
+	name = "Troubleshooting"
+	url = "#"
+[[params.links.jigsaw]]
+	name = "About Jigsaw"
+	url = "https://jigsaw.google.com/"
+[[params.links.jigsaw]]
+	name = "The False Positive"
+	url = "https://medium.com/jigsaw"
+[[params.links.jigsaw]]
+	name = "The False Positive"
+	url = "https://medium.com/jigsaw"
+[[params.links.otherjigsaw]]
+	name = "Intra"
+	url = "https://getintra.org/#!/"
+[[params.links.otherjigsaw]]
+	name = "Outline"
+	url = "https://www.getoutline.org/en/home"
+[[params.links.otherjigsaw]]
+	name = "Project Shield"
+	url = "https://projectshield.withgoogle.com/"
+

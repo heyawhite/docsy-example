@@ -1,0 +1,57 @@
+{{ $links := .Site.Params.links }}
+<footer class="bg-white row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+		<h3>Browse</h3>
+        {{ with $links }}
+        {{ with index . "browse"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-xs-center order-sm-3">
+		  <h3>About Us</h3>
+        {{ with $links }}
+        {{ with index . "jigsaw"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-xs-center order-sm-3">
+		  <h3>Other Jigsaw Products</h3>
+        {{ with $links }}
+        {{ with index . "otherjigsaw"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+	<div class="row bottom">
+		<div class="col-12 col-sm-6 text-xs-center order-sm-2">
+				{{ with resources.Get "icons/jigsaw-logo.jpg" }}
+					<img src="{{ .RelPermalink }}" class="logo" />
+				{{ end }}
+		</div>
+		<div class="col-12 col-sm-6 text-center py-2 order-sm-2">
+			<ul class="list-inline mb-0">
+				<li class="list-inline-item mx-2">{{ with .Site.Params.privacy_policy }}<a href="{{ . }}" target="_blank">Privacy Policy</a>{{ end }}</li>
+				<li class="list-inline-item mx-2">{{ with .Site.Params.terms }}<a href="{{ . }}" target="_blank">Terms</a>{{ end }}</li>
+				<li class="list-inline-item mx-2">{{ with .Site.Params.copyright }}&copy; {{ now.Year}} {{ .}} {{ T "footer_all_rights_reserved" }}{{ end }}</li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</footer>
+
+{{ define "footer-links-block" }}
+<ul class="list mb-1 mx-0 px-0">
+  {{ range . }}
+  <li class="footer-li mb-2" data-toggle="tooltip" data-placement="top" title="{{ .name }}" aria-label="{{ .name }}">
+    <a target="_blank" href="{{ .url }}">
+      {{ .name }}
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
