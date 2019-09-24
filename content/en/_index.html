@@ -1,10 +1,12 @@
 +++
 title = "Perspective Comment Analyzer API"
 linkTitle = "Perspective API"
-
 +++
 
 {{< blocks/cover title="Perspective Comment Analyzer API" image_anchor="top" height="full" color="orange" >}}
+<div class="installcode" style="text-align:center;padding:0 0 20px 0;">
+	<code>gcloud services enable commentanalyzer.googleapis.com</code>
+</div>
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
@@ -40,33 +42,5 @@ We do a [Pull Request](https://github.com/conversationai/perspectiveapi/pulls) c
 {{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/jigsaw" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
-
-{{< /blocks/section >}}
-
-
-{{< blocks/section >}}
-
-<p>Example demo code:</p>
-
-<ul>
-
- <li><a href="https://github.com/conversationai/perspectiveapi-simple-server">A simple server</a> that can hold your API key and access the Perspective API.</li>
- <li>An <a href="https://github.com/conversationai/perspectiveapi-authorship-demo">example of an authorship experience</a> gives an author feedback as they type.</li>
- <li>A <a href="https://github.com/conversationai/perspectiveapi-proxy">proxy to the API</a> with access restrictions and a simple UI to debug calls to the API.</li>
- <li><a href="https://github.com/conversationai/conversationai-moderator">Conversation AI - Moderator</a> a comment moderation system that provide hint and assist UI for moderators based on a plugable model of computational assistants, including support for using Perspective API models. There are also plugins to support moderation of different platforms, e.g.:
-	 <ul>
-		 <li><a href="https://github.com/conversationai/conversationai-moderator-discourse">Discourse plugin</a></li>
-		 <li><a href="https://github.com/conversationai/conversationai-moderator-wordpress">WordPress plugin</a></li>
-		 <li><a href="https://github.com/conversationai/conversationai-moderator-reddit">Reddit plugin</a> (incomplete, does not yet support actions)</li>
- 	</ul>
-  </li>
-</ul>
-
-<p>If you would like to receive email updates about the API - for example when we add new models, or deprecate old ones - you can subscribe to <a href="https://groups.google.com/forum/#!forum/perspective-announce/join">perspective-announce</a>. You will
-then receive email updates from perspective-announce@googlegroups.com. This list will be used only to share release information, and will never be used to ask you login details of any kind. For support and to contact us, see: <a href="https://support.perspectiveapi.com/">https://support.perspectiveapi.com/</a>.</p>
-
-<p>The Perspective API is provided under the <a href="https://www.google.com/intl/en/policies/privacy/">Google Privacy Policy</a>, and the <a href="https://www.google.com/intl/en/policies/terms/">Google Cloud API terms of service</a>.</p>
-
-<p>Users can leverage the <code>DoNotStore</code> flag to ensure that all submitted comments are automatically deleted after scores are returned and/or the <code>SuggestCommentScore</code> method to submit corrections to improve Perspective over time.</p>
 
 {{< /blocks/section >}}

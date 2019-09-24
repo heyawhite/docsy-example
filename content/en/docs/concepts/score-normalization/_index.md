@@ -1,6 +1,6 @@
 
 ---
-title: "Score Normalization and Stable Model Updates"
+title: "Score normalization and stable model updates"
 linkTitle: "Score normalization"
 weight: 40
 ---

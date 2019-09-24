@@ -93,7 +93,7 @@ sidebar_menu_compact = false
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-sidebar_search_disable = true
+sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
 navbar_logo = true
 
@@ -134,9 +134,9 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 # Perspective custom theme links
 # 
 # Links for header navigation, before contact/support
-# [[params.links.nav]]
-# 	name = ""
-# 	url = ""
+ [[params.links.nav]]
+ 	name = "Contact"
+ 	url = "https://support.perspectiveapi.com/s/contactsupport"
 # Links for footer navigation
 [[params.links.browse]]
 	name = "About"

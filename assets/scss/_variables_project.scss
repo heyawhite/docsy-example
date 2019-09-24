@@ -16,7 +16,7 @@ $white: #fff !default;
 $light: #eee5fa !default;
 
 $dark: #403F4C !default;
-$blue: #72A1E5 !default;
+$blue: rgb(61, 90, 254) !default;
 $orange: #BA5A31 !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #eee !default;
@@ -42,15 +42,15 @@ $td-sidebar-border-color: $primary-light !default;
 // These colors are all part of the theme palette, but the mix is fairly random to create variation. This can be overridden by the project if needed.
 $td-box-colors: $dark, $primary, $secondary, $info, $primary-light, $gray-600, $success, $warning, $dark, $danger, $primary, $secondary, $primary-light, $info;
 
-$link-color: darken($primary, 15%) !default;
+$link-color: $blue !default;
 $link-decoration: none !default;
-$link-hover-color: darken($primary, 15%) !default;
-$link-hover-decoration: none !default;
+$link-hover-color: lighten($blue, 15%) !default;
+$link-hover-decoration: underline !default;
 
 // Fonts
 
-$google_font_name: "Roboto" !default;
-$google_font_family: "Roboto:300" !default;
+$google_font_name: 'Google Sans' !default;
+$google_font_family: "Google+Sans" !default;
 $web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}";
 // family=Google+Sans:400,500|Roboto:300|Roboto+Mono:300,500
 
@@ -72,15 +72,36 @@ Other customizations
 
 .navbar-white.td-navbar {
 	background:#fff;
-	.navbar-nav .nav-link.active {
-		color:rgba(0,0,0,.54) !important;
+	.navbar-nav .nav-link {
+		color:rgba(0,0,0,.54); transition:box-shadow 0.2s ease-out;
 	}
+	.navbar-nav .nav-link.active {
+		color:rgba(0, 0, 0, 0.9); transition:box-shadow 0.2s ease-out;
+	}
+	.navbar-brand {color:rgba(0,0,0,.54); transition:box-shadow 0.2s ease-out;}
+	.navbar-brand:hover {color:rgba(0, 0, 0, 0.9);}
 } 
 footer.bg-white {
 	.row {padding:20px 0 10px;}
 	h3 {font-size: 1.125rem; color:$gray-600; text-transform:uppercase;}
 	.footer-li {list-style:none;}
 	.bottom {
+		font-size:.8125rem;
 		.logo {height:auto; width:120px;}
 	}
+}
+
+.installcode {
+	margin-bottom:2em;
+	code {
+    color: #fff;
+    background: #c2c2c2;
+    padding: 10px 12px;
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
+}
+}
+
+@media (min-width: 768px) {
+	.td-sidebar-nav__section > ul {padding-left:0.85rem;}
 }
