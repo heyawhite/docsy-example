@@ -80,7 +80,9 @@ Other customizations
 	}
 	.navbar-brand {color:rgba(0,0,0,.54); transition:box-shadow 0.2s ease-out;}
 	.navbar-brand:hover {color:rgba(0, 0, 0, 0.9);}
+	.td-search-input {background-color:$gray-600;}
 } 
+
 footer.bg-white {
 	.row {padding:20px 0 10px;}
 	h3 {font-size: 1.125rem; color:$gray-600; text-transform:uppercase;}
